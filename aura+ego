@@ -1,0 +1,402 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPnl+67ysNfcQNnZClzQmW6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nolasmos/repositorio-sigma-do-nicolau/blob/main/aura%2Bego\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "56YeYCYwdQyv",
+        "outputId": "82919b3e-8269-432a-e8e2-d3d22d1744e8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o comprimento do retângulo: 3\n",
+            "Digite a largura do retângulo: 5\n",
+            "a area do retangule é: 15.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "comprimento = float(input(\"Digite o comprimento do retângulo: \"))\n",
+        "largura = float(input(\"Digite a largura do retângulo: \"))\n",
+        "\n",
+        "area = comprimento * largura\n",
+        "perimetro = 2 * (comprimento + largura)\n",
+        "\n",
+        "print(f\"a area do retangule é: {area}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"digite um numero\"))\n",
+        "\n",
+        "dobro = numero * 2\n",
+        "\n",
+        "print(f\"o dobro de {numero} é:{dobro}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NUS_pjl_d5Ai",
+        "outputId": "eab1a164-e20b-4b8b-a663-5a004245e82d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero8\n",
+            "o dobro de 8 é:16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#cadastro\n",
+        "\n",
+        "nome = input(\"digite seu nome: \")\n",
+        "idade = input(\"digite sua idade: \")\n",
+        "\n",
+        "print(f\"olá {nome}, você tem {idade} anos\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rJE_U_baegt_",
+        "outputId": "c72f1645-0730-4054-854d-4c12b313f44a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome: nicolas\n",
+            "digite sua idade: 15\n",
+            "olá nicolas, você tem 15 anos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "escrever um algoritmo que calcula o triplo"
+      ],
+      "metadata": {
+        "id": "-Srtyyn7g-Vu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = float(input(\"digite um numero\"))\n",
+        "\n",
+        "triplo = numero * 3\n",
+        "\n",
+        "print (f\" o triplo de {numero} é: {triplo}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dj7_TOq6hRnV",
+        "outputId": "7b15a958-49a1-44df-cc01-e65b0ff8c741"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero5\n",
+            " o triplo de 5.0 é: 15.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "escreva um programa q escreva o nome do usuario e a idade e mostre uma mensagem com o ano q ele nasceu"
+      ],
+      "metadata": {
+        "id": "pkwkq8fKkhdj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = input(f\"digite seu nome: \")\n",
+        "ano = int(input(f\"digite seu ano de nascimento: \"))\n",
+        "\n",
+        "idade = 2026 - ano\n",
+        "print(f\"olá {nome} você tem {idade} pois você nasceu em {ano}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DWkRi6BkksIM",
+        "outputId": "e5a7c7b5-eca0-48d3-82d6-510479833f8b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome: nicolas\n",
+            "digite seu ano de nascimento: 2010\n",
+            "olá nicolas você tem 16 pois você nasceu em 2010\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "escrever um programa que converta a temperatura"
+      ],
+      "metadata": {
+        "id": "sd7SOWoFnj3f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "temperatura_celsius = float (input(\"temperatura em celsius: \"))\n",
+        "f = (temperatura_celsius * 9 / 5) + 32\n",
+        "print(f\"a temperatura em f:{f}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KbDGGdc7nePv",
+        "outputId": "79dab4f5-32fd-4607-8841-48c0cc2e61c1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "temperatura em celsius: 21\n",
+            "a temperatura em f:69.8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "calculadora"
+      ],
+      "metadata": {
+        "id": "Zu2lyhEcgoLH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#informações\n",
+        "a = int(input(\"digite um numero: \"))\n",
+        "b = int(input(\"digite outro numero: \"))\n",
+        "\n",
+        "#contas\n",
+        "soma = a + b\n",
+        "subtracao = a - b\n",
+        "multiplicacao = a * b\n",
+        "divisao = a / b\n",
+        "div_int = a // b\n",
+        "resto = a % b\n",
+        "potencia =  a ** b\n",
+        "#saida\n",
+        "print(\"--------------------------calculadora---------------------------\")\n",
+        "print(\"-----------------------------soma-------------------------------\")\n",
+        "print(f\"a soma de {a} e {b} é igual à: {soma}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"-------------------subtracao-------------------------------------\")\n",
+        "print(f\"a subtraçao de {a} e {b} é igual à: {subtracao}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"-------------------multiplicacao---------------------------------\")\n",
+        "print(f\"a multiplicacao de {a} e {b} é igual à: {multiplicacao}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"-------------------divisao---------------------------------------\")\n",
+        "print(f\"a divisao de {a} e {b} é igual à: {divisao}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"-------------------divisao inteira-------------------------------\")\n",
+        "print(f\"a divisao int. de {a} e {b} é igual à: {div_int}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"---------------------------resto---------------------------------\")\n",
+        "print(f\"o resto de {a} e {b} é igual à: {resto}\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(f\"{a} elevado a {b} potencia é igual à: {potencia}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2nvdESbcgp2e",
+        "outputId": "91f384e0-25cb-4dfe-aba7-154b39d5d96e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 2\n",
+            "digite outro numero: 3\n",
+            "--------------------------calculadora---------------------------\n",
+            "-----------------------------soma-------------------------------\n",
+            "a soma de 2 e 3 é igual à: 5\n",
+            "-----------------------------------------------------------------\n",
+            "-------------------subtracao-------------------------------------\n",
+            "a subtraçao de 2 e 3 é igual à: -1\n",
+            "-----------------------------------------------------------------\n",
+            "-------------------multiplicacao---------------------------------\n",
+            "a multiplicacao de 2 e 3 é igual à: 6\n",
+            "-----------------------------------------------------------------\n",
+            "-------------------divisao---------------------------------------\n",
+            "a divisao de 2 e 3 é igual à: 0.6666666666666666\n",
+            "-----------------------------------------------------------------\n",
+            "-------------------divisao inteira-------------------------------\n",
+            "a divisao int. de 2 e 3 é igual à: 0\n",
+            "-----------------------------------------------------------------\n",
+            "---------------------------resto---------------------------------\n",
+            "o resto de 2 e 3 é igual à: 2\n",
+            "-----------------------------------------------------------------\n",
+            "2 elevado a 3 potencia é igual à: 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "fazer um programa que converte horas em minutos e horas em segundos"
+      ],
+      "metadata": {
+        "id": "FDcbajIrnhO2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#informacoes\n",
+        "horas = int(input(\"digita as horas: \"))\n",
+        "\n",
+        "#contas\n",
+        "minutos = horas * 60\n",
+        "segundos = minutos * 60\n",
+        "\n",
+        "#resultados\n",
+        "print (f\"{horas} em minutos é igual à: {minutos}\")\n",
+        "print (f\"{horas} em segundos é igual à: {segundos}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xxIhrJZynlz7",
+        "outputId": "71efe773-2dd7-4057-dbc6-92c3e2d5793c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digita as horas: 2\n",
+            "2 em minutos é igual à: 120\n",
+            "2 em segundos é igual à: 7200\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "fazer km em metros e milhas"
+      ],
+      "metadata": {
+        "id": "wdoFlv_in1Gq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#entrada\n",
+        "km = int(input(\"digite a distancia em km: \"))\n",
+        "\n",
+        "#contas\n",
+        "metros = km * 1000\n",
+        "milhas = km / 1.60934\n",
+        "\n",
+        "#saida\n",
+        "\n",
+        "print(f\"{km}km em metros é igual à: {metros}\")\n",
+        "print(f\"{km}km em milhas é igual à: {milhas}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o-KrqIxjoCBI",
+        "outputId": "67ce14eb-0292-43ed-c34c-b40e120f0c9a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a distancia em km: 1\n",
+            "1km em metros é igual à: 1000\n",
+            "1km em milhas é igual à: 0.6213727366498067\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
